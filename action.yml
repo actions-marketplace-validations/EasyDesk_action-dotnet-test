@@ -23,6 +23,8 @@ runs:
   steps:
     - name: Run tests
       uses: EasyDesk/action-dotnet@v1
+      env:
+        TESTINGPLATFORM_TELEMETRY_OPTOUT: 1
       with:
         script: |
           ARGS=""
